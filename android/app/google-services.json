@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "434417142897",
+    "project_id": "djamaleddineapp",
+    "storage_bucket": "djamaleddineapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434417142897:android:8cc6b0d635cac44268dfd0",
+        "android_client_info": {
+          "package_name": "io.codemagic.djamaleddineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434417142897-tji2ps0ni7mgujn5ari7qg6amfqr7bi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk9j5wEk0rfIb6J_KWwa_VcIlhC6J4yHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434417142897-tji2ps0ni7mgujn5ari7qg6amfqr7bi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
