@@ -1,6 +1,3 @@
-# Automatically generated on 2022-03-30 UTC from https://codemagic.io/app/6244357c61477822c15354c2/settings
-# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
-
 workflows:
   default-workflow:
     name: Default Workflow
@@ -9,6 +6,7 @@ workflows:
       groups:
         - keystore_credentials
         - firebase_credentials
+        - distribution_credentials
       flutter: stable
       xcode: latest
       cocoapods: default
@@ -29,18 +27,10 @@ workflows:
       - flutter build apk --release --build-name=1.0.5 --build-number=$PROJECT_BUILD_NUMBER
     artifacts:
       - build/**/outputs/apk/**/*.apk
-      - build/**/outputs/bundle/**/*.aab
       - build/**/outputs/**/mapping.txt
-      - '*.snap'
-      - build/windows/**/*.msix
-      - flutter_drive.log
     publishing:
-      email:
-        recipients:
-          - jamalbelilet@gmail.com
       firebase:
         firebase_token: $FIREBASE_TOKEN
         android:
-          app_id: 1:434417142897:android:8cc6b0d635cac44268dfd0
-          groups:
-            - codemagic-testing-group
+          app_id: $FIREBASE_ANDROID_APP_ID
+          groups: $FIREBASE_ANDROID_GROUPS
