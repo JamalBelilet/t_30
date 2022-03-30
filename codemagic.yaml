@@ -8,6 +8,7 @@ workflows:
     environment:
       groups:
         - keystore_credentials
+        - firebase_credentials
       flutter: stable
       xcode: latest
       cocoapods: default
