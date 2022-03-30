@@ -6,7 +6,6 @@ workflows:
       groups:
         - keystore_credentials
         - firebase_credentials
-        - distribution_credentials
       flutter: stable
       xcode: latest
       cocoapods: default
