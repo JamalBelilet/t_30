@@ -1,0 +1,1 @@
+We've updated the app to fix some crashes and make features load faster.
